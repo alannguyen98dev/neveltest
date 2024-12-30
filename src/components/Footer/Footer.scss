@@ -1,0 +1,139 @@
+.footer {
+    background-color: #001f3f;
+    color: white;
+    padding: 40px 20px;
+
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .footer-desktop {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .footer-section {
+                flex: 1;
+                min-width: 200px;
+
+                h3 {
+                    font-size: 18px;
+                    margin-bottom: 16px;
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+
+                    li {
+                        margin-bottom: 8px;
+
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            font-size: 14px;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+                .social-icons {
+                    margin-top: 16px;
+                    font-size: 20px;
+
+                    a {
+                        margin-right: 12px;
+                        color: white;
+
+                        &:hover {
+                            color: #1a73e8;
+                        }
+                    }
+                }
+
+                .get-answers-btn {
+                    background-color: #1a73e8;
+                    border: none;
+                    color: white;
+
+                    &:hover {
+                        background-color: #145db2;
+                    }
+                }
+
+                .app-links button {
+                    margin-bottom: 10px;
+                    background-color: #0e2340;
+                    color: white;
+                    border: 1px solid #1a73e8;
+
+                    &:hover {
+                        background-color: #1a73e8;
+                    }
+                }
+            }
+        }
+
+        .footer-mobile {
+            display: none;
+
+            .social-icons {
+                margin: 16px 0;
+            }
+
+            .collapse {
+                border: unset;
+                border-radius: 8px;
+                margin-bottom: 8px;
+                .ant-collapse-item {
+                    border: unset;
+                    background-color: #1a3157;
+                    border-radius: 8px;
+                    .ant-collapse-header {
+                        color: white;
+                    }
+                }
+                .ant-collapse-content {
+                    border: unset;
+                    .ant-collapse-content-box {
+                        background-color: #1a3157;
+                    }
+                }
+            }
+
+            .help-center-mobile {
+                margin-top: 20px;
+
+                .get-answers-btn {
+                    width: 100%;
+                }
+            }
+
+            .app-links button {
+                margin-bottom: 10px;
+                width: 100%;
+                background-color: #0e2340;
+                color: white;
+                border: 1px solid #1a73e8;
+
+                &:hover {
+                    background-color: #1a73e8;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .footer-desktop {
+            display: none !important;
+        }
+
+        .footer-mobile {
+            display: block !important;
+        }
+    }
+}

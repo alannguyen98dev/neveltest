@@ -1,0 +1,85 @@
+.carousel-container {
+    margin: 0;
+    width: 100%;
+    background-color: #03193a;
+    padding: 24px 0;
+    .slick-slide {
+        transition: all 0.3s;
+        opacity: 0.6;
+        transform: scale(0.9);
+
+        &.slick-center {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    .carousel-item {
+        display: flex;
+        border-radius: 16px;
+        height: 485px;
+        padding: 40px 85px;
+        margin: 0px auto;
+        box-sizing: border-box;
+        @media (max-width: 768px) {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .content-wrapper {
+            max-width: 50%;
+            color: white;
+            @media (max-width: 425px) {
+                max-width: 100%;
+            }
+            .badge {
+                background-color: #ffffff1a;
+                padding: 4px 8px;
+                border-radius: 12px;
+                font-size: 12px;
+                margin-bottom: 10px;
+                display: inline-block;
+                // border: ;
+            }
+            .main-title {
+                font-size: 42px;
+                font-weight: 800;
+                line-height: 58px;
+                text-align: center;
+                @media (max-width: 425px) {
+                    font-size: 24px;
+                }
+            }
+            .sub-title {
+                font-size: 42px;
+                font-weight: 800;
+                line-height: 58px;
+                text-align: center;
+                @media (max-width: 425px) {
+                    font-size: 24px;
+                }
+            }
+            .action-btn {
+                background-color: #ff0960;
+                color: white;
+                padding: 16px 88px;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                font-size: 21px;
+                font-weight: 600;
+                line-height: 21px;
+                text-align: center;
+                &:hover {
+                    background-color: #e63a5f;
+                }
+            }
+        }
+        .carousel-image {
+            max-width: 50%;
+            border-radius: 16px;
+        }
+    }
+}
